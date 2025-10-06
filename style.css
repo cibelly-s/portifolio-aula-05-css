@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin: 0%; /* tirou a margem */
+    padding: 0%; /* tirou o espaço interno */
+    box-sizing: border-box;
+    /* nós decidimos o tamanho da caixa */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto; 
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    /* mexer na caixa, sem ele a configuração não funciona */
+    justify-content: center;
+    /* eixo pricipal (esta no centro) */
+    align-items: center;
+    /* eixo transversal ( esta no centro) */
+    min-height: 100vh;
+    /* trabalha com tamanho disponivel*/
+    background-image: url(./imagens/paisagem\ linda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    /* conteudo principal */
+    width: 420px;
+    /* mexendo na largura */
+    background-color: transparent;
+    /* deixando o fundo do meu conteudo transparente */
+    border: 2px solid rgba(255, 255, 255, .2);
+    /* borda da caixa */
+    border-radius: 10px;
+    /* deixou a caixa arredondada */
+    color: #fff;
+    /* deixou a cor da fonte branca */
+    padding: 30px 40px;
+    /* Ajusta o tamanho do top, right, bottom e left */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* da sombra na caixa */
+    /*backdrop-filter: blur(30px); poem um filtro */
+}
+
+.container h1 {
+    /* mexendo no tamanho da fonte e dizendo onde quero que o elemento fique */
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.caixa-botao {
+    position: relative;
+    /* muda a posição do elemento de acordo com minha necessidade. */
+    width: 100%;
+    /* a div do email e da senha ocupa 100% o tamanho do container */
+    height: 50px;
+    /* Altura das divs */
+    margin: 30px 0;
+    /* Margin das divs */
+}
+.caixa-botao input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid;
+    outline: none;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+.caixa-botao input::placeholder{
+    color: azure;
+}
+.caixa-botao i {
+    position: absolute;
+    right: 20px;
+    top: 35%;
+    font-size: 20px;
+}
+.lembrar-senha{
+    display: flex;
+    justify-content: space-between; 
+}
+.lembrar-senha label input {
+    accent-color: rgb(255, 0, 200);
+    margin-right: 5px;
+}
+.lembrar-senha a {
+    color: rgb(255, 0, 0);
+}
+.lembrar-senha a:hover{
+    text-decoration: underline;
+}
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: #3a003d;
+    border: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #ff96f1;
+    font-weight: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* sombra pra caixa */
+    margin-top: 20px;
+    cursor: pointer; /* maozinha do mouse */
+}
+.login:hover{
+    background-color: transparent;
+    border: 2px solid;
+    color: #fff;
+    transition: 0.5s;
+}
+.cadastro{
+    font-size: 14px; 
+    text-align: center; /* alinha o texto */
+    margin: 20px 0 15px;
+}
+.cadastro a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.cadastro a:hover{ /* altera ao passar o mouse em cima  */
+    text-decoration: underline; /* decoraçao de texto */
+}

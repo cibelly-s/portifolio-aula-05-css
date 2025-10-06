@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- tipo de documento -->
+<html lang="pt-br"> <!-- linguagem em portugues -->
+
+<head> <!-- configuração -->
+    <meta charset="UTF-8"> <!-- caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- se adapta 100% da tela de acordo com o aparelho -->
+    <title>Formulario</title> <!-- titulo do negocio la em cima da pagina -->
+    <link rel="stylesheet" href="style.css"> <!-- link do css -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> <!-- link de algo q tenho q perguntar, nao entendi sobre o que é -->
+</head>
+
+<body> <!-- corpo / conteudo dentro de uma pagina -->
+    <main class="container"> <!-- conteudo pricipal -->
+        <form action=""> <!-- formulario -->
+        <h1>Login</h1> <!-- titulo -->
+        <div class="caixa-botao"><!-- caixa -->
+            <input placeholder="Email" type="email"> <!-- botão (entrada de texto) -->
+            <i class="bx bxs-user"></i> <!-- icon que fica dentro da caixa  -->
+        </div>
+
+        <div class="caixa-botao">
+            <input placeholder="Senha" type="password">
+            <i class="bx bxs-lock-alt"></i> 
+        </div>
+
+        <div class="lembrar-senha">
+            <label> <!-- etiqueta -->
+                <input type="checkbox">
+                Lembrar Senha
+            </label>
+            <a href="#">Esqueci a Senha</a> 
+        </div>
+        <button type="submit" class="login">Login</button> <!-- botão -->
+
+        <div class="cadastro">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p> <!-- paragrafo -->
+        </div>
+    </form>
+    </main>
+</body>
+
+</html>
